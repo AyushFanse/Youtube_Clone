@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Oswald:wght@300;400;500;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.root.active {
+  --theam: rgb(255, 0, 13);
+  --background: rgba(33, 33, 33, 0.95);
+  --dark-background: hsl(0, 0%, 7%);
+  --shade: hsl(0deg 0% 19%);
+  --active: rgb(170, 170, 170);
+  --icon: #fff;
+}
+
+.root {
+  --theam: rgb(255, 0, 13);
+  --background: #fff;
+  --dark-background: #fff;
+  --shade: rgba(105, 105, 105, 0.152);
+  --active-shade: rgba(105, 105, 105, 0.33);
+  --active: rgba(59, 59, 59, 0.5);
+  --icon: rgba(9, 9, 9, 0.844);
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  margin: block;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--active);
+  border: 4px solid var(--dark-background);
+  border-radius: 25px;
+}
+
+
+.root {
+  background: var(--dark-background);
+}
+
+.flex {
+  display: flex;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.ai-s {
+  align-items: flex-start;
+}
+
+.ai-e {
+  align-items: flex-end;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
